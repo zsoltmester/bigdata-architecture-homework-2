@@ -9,7 +9,6 @@ import java.io.IOException;
 
 public class FriendsMapper extends Mapper<LongWritable, Text, IntWritable, IntWritable> {
 
-    // TODO Miért így láttam minden példában? Ez így optimális? A context rögtön kiírja, így mindegy a példány?
     private final IntWritable userId = new IntWritable(-1);
     private final IntWritable friendId = new IntWritable(-1);
 
